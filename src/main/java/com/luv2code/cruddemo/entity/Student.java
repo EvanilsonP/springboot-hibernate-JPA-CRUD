@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 @Table(name="student")
 public class Student {
     // define fields
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
@@ -25,6 +24,7 @@ public class Student {
     public Student() {
 
     }
+
     public Student(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -65,7 +65,6 @@ public class Student {
     }
 
     // define toString() method
-
     @Override
     public String toString() {
         return "Student{" +
